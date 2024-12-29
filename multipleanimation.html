@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple animation</title>
+    <!-- <link rel="stylesheet" href=""> -->
+     <style>
+        .color-changing-animation{
+         width: 100px;
+         height: 100px;
+         background-color: aqua;
+         animation-name: change-color;
+         animation-duration: 4s; 
+        }
+
+        @keyframes change-color{
+            to{background-color: green;}
+            
+        }
+        .multiple-color-changing-animation{
+         width: 100px;
+         height: 100px;
+         background-color: beige;
+         animation-name: multiple-color;
+         animation-duration: 10s; 
+
+        }
+
+        @keyframes multiple-color{
+           0% {background-color:rgb(218, 218, 82);}
+           25% {background-color:rgb(245, 112, 72);}
+           50% {background-color:rgb(255, 166, 0);}
+           75% {background-color:rgb(251, 255, 0);}
+           100% {background-color:rgb(102, 255, 0);}
+        }
+     </style>
+</head>
+<body>
+    <h1>color changing animation</h1>
+    <div class="color-changing-animation"></div>
+    <br>
+    <div class="multiple-color-changing-animation"></div>
+</body>
+</html> 
